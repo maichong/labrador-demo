@@ -1,0 +1,29 @@
+{
+  "name": "labrador-demo",
+  "version": "1.0.0",
+  "description": "labrador-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maichong/labrador-demo.git"
+  },
+  "keywords": [
+    "demo",
+    "labrador"
+  ],
+  "author": "li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maichong/labrador-demo/issues"
+  },
+  "homepage": "https://github.com/maichong/labrador-demo#readme",
+  "dependencies": {
+    "al-ui": "git+https://github.com/maichong/al-ui.git",
+    "labrador": "git+https://github.com/maichong/labrador.git",
+    "redux": "^3.6.0",
+    "seamless-immutable": "^6.3.0"
+  }
+}
