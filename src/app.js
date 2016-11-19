@@ -4,8 +4,15 @@
  * @author Li <li@maichong.it>
  */
 
+import request from 'al-request';
+import { setStore } from 'labrador-redux';
+import store from './redux';
+
+// 向labrador-redux注册store
+setStore(store);
+
 export default class {
-  onLaunch(){
-    
+  async onLaunch() {
+    await request('start');
   }
 }

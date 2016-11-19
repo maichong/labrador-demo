@@ -1,0 +1,24 @@
+{
+  "define":{
+    "API_ROOT":"http://localhost:5000/"
+  },
+  "npmMap":{
+  },
+  "uglify":{
+    "mangle": [],
+    "compress": {
+      "warnings": false
+    }
+  },
+  "classNames": {
+    "for-test":true
+  },
+  "env":{
+    "development": {},
+    "production": {
+      "define":{
+        "API_ROOT":"https://your.online.domain/"
+      }
+    }
+  }
+}
