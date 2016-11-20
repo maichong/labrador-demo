@@ -3,6 +3,10 @@
     "API_ROOT":"http://localhost:5000/"
   },
   "npmMap":{
+    "lodash.isplainobject":"lodash/isPlainObject",
+    "lodash.isstring":"lodash/isString",
+    "lodash.issymbol":"lodash/isSymbol",
+    "lodash-es":"lodash"
   },
   "uglify":{
     "mangle": [],

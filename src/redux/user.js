@@ -20,4 +20,4 @@ export const clear = createAction(CLEAR);
 
 export default handleActions({
   [LOAD]: (state, action) => state.merge(action.payload)
-});
+}, INITIAL_STATE);

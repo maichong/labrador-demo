@@ -3,7 +3,7 @@ import { persistStore, autoRehydrate } from 'redux-persist';
 import createLogger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import reduxPersist from '../config/redux-persist';
-import StartupActions from './startup';
+import * as StartupActions from './startup';
 
 /**
  * 创建store
