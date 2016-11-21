@@ -1,10 +1,10 @@
 import immutable from 'seamless-immutable';
 
 export default{
-  in(raw){
+  out(raw){
     return immutable(raw);
   },
-  out(state){
+  in(state){
     return state.asMutable ? state.asMutable({ deep: true }) : state;
   }
 };

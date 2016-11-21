@@ -4,9 +4,10 @@ import rootSaga from '../sagas/';
 
 import login from './login';
 import user from './user';
+import todos from './todos';
 
 function createStore() {
-  const rootReducer = combineReducers({ login, user });
+  const rootReducer = combineReducers({ login, user, todos });
 
   return configureStore(rootReducer, rootSaga);
 }

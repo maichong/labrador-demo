@@ -1,3 +1,21 @@
-<view>
-
+<view class="todo-list has-toolbar">
+  <view class="list">
+    <list key="todos" name="todo"/>
+  </view>
+  <block wx:if="{{finished}}">
+    <view class="group-header">已完成</view>
+    <view class="list">
+      <list key="finished" name="todo"/>
+    </view>
+    <view wx:if="{{finished>3}}" class="padding-h-xxlarge padding-top-large">
+      <view class="btn btn-gray-hollow block" catchtap="handleShowFinished">查看全部已完成</view>
+    </view>
+  </block>
+  <view wx:if="{{count}}" class="gray padding text-right">总数 {{count}} 已完成 {{finished}}</view>
+  <view class="toolbar toolbar-bottom padding-h-xsmall">
+    <view class="form-group flex">
+      <input class="form-control" type="text" placeholder="请输入新的任务" value="{{titleInput}}" bindinput="handleInput"/>
+    </view>
+    <view class="btn btn-success" catchtap="handleCreate">新增</view>
+  </view>
 </view>

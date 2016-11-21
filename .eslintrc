@@ -4,7 +4,10 @@
     "node": true
   },
   "globals": {
-    "__DEBUG__": true
+    "__DEV__": true,
+    "wx": true,
+    "getApp": true,
+    "getCurrentPages": true
   },
   "parser": "babel-eslint",
   "plugins": ["flowtype", "flowtype-errors"],

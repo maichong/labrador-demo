@@ -20,7 +20,7 @@ export default function (rootReducer, rootSaga) {
   middleware.push(sagaMiddleware);
 
   // log中间件
-  const SAGA_LOGGING_BLACKLIST = ['EFFECT_TRIGGERED', 'EFFECT_RESOLVED', 'EFFECT_REJECTED', 'persist/REHYDRATE'];
+  const SAGA_LOGGING_BLACKLIST = ['EFFECT_TRIGGERED', 'EFFECT_RESOLVED', 'EFFECT_REJECTED'];
   if (__DEV__) {
     const logger = createLogger({
       predicate: (getState, { type }) => SAGA_LOGGING_BLACKLIST.indexOf(type) === -1
