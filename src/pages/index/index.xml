@@ -12,10 +12,19 @@
     </view>
   </block>
   <view wx:if="{{count}}" class="gray padding text-right">总数 {{count}} 已完成 {{finished}}</view>
+  <view wx:else class="msg">
+    <icon class="msg-icon" type="info" size="80" color="#ccc"/>
+    <view class="msg-title">当前没有任务</view>
+    <view class="msg-desc">请在下方输入框中填入新任务然后点击新增</view>
+  </view>
   <view class="toolbar toolbar-bottom padding-h-xsmall">
     <view class="form-group flex">
       <input class="form-control" type="text" placeholder="请输入新的任务" value="{{titleInput}}" bindinput="handleInput"/>
     </view>
-    <view class="btn btn-success" catchtap="handleCreate">新增</view>
+    <view class="btn btn-success btn-toolbar" catchtap="handleCreate">新增</view>
+  </view>
+  <view class="footer">
+    <view>Powered by Labrador</view>
+    <text class="link" catchtap="handleShowUI">AL UI</text>
   </view>
 </view>

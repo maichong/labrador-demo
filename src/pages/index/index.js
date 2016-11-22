@@ -76,7 +76,12 @@ class Index extends Component {
   }
 
   handleCreate() {
-    this.props.createTodo({ title: this.state.titleInput });
+    let title = this.state.titleInput;
+    if (!title) {
+      wx.showToast({ title: '请输入任务' });
+      return;
+    }
+    this.props.createTodo({ title });
     this.setState({ titleInput: '' });
   }
 
@@ -98,6 +103,10 @@ class Index extends Component {
 
   handleShowFinished() {
     wx.navigateTo({ url: 'finished' });
+  }
+
+  handleShowUI() {
+    wx.navigateTo({ url: '/pages/ui/index' });
   }
 }
 

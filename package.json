@@ -11,8 +11,8 @@
     "labrador"
   ],
   "dependencies": {
-    "al-request": "^0.1.0",
-    "al-ui": "^0.1.0",
+    "al-request": "^0.1.1",
+    "al-ui": "^0.1.1",
     "assert": "^1.4.1",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
@@ -36,11 +36,11 @@
     "labrador-redux": "^0.1.0",
     "labrador-storage": "^0.1.0",
     "redux": "^3.6.0",
-    "redux-actions": "^1.0.0",
+    "redux-actions": "^1.0.1",
     "redux-logger": "^2.7.4",
     "redux-persist": "^4.0.0-beta1",
     "redux-saga": "^0.13.0",
-    "regenerator-runtime": "^0.9.6",
+    "regenerator-runtime": "^0.10.0",
     "seamless-immutable": "^6.3.0"
   }
 }
