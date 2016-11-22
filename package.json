@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "labrador build",
-    "flow": "flow"
+    "flow": "flow",
+    "eslint": "eslint ./"
   },
   "keywords": [
     "labrador"
   ],
   "dependencies": {
-    "al-request": "^0.1.1",
+    "al-request": "^0.1.2",
     "al-ui": "^0.1.1",
     "assert": "^1.4.1",
     "babel-core": "^6.18.2",
@@ -32,7 +33,7 @@
     "eslint-plugin-jsx-a11y": "^3.0.1",
     "eslint-plugin-react": "^6.7.1",
     "flow-bin": "^0.35.0",
-    "labrador": "git+https://github.com/maichong/labrador.git",
+    "labrador": "^0.6.0",
     "labrador-redux": "^0.1.0",
     "labrador-storage": "^0.1.0",
     "redux": "^3.6.0",

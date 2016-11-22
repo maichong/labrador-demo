@@ -1,15 +1,9 @@
-/**
- * @copyright Maichong Software Ltd. 2016 http://maichong.it
- * @date 2016-11-19
- * @author Li <li@maichong.it>
- */
-
 import wx, { Component, PropTypes } from 'labrador-immutable';
 import { bindActionCreators } from 'redux';
 import { connect } from 'labrador-redux';
 import Todo from '../../components/todo/todo';
 import * as todoActions from '../../redux/todos';
-import sleep from '../../utils/sleep';
+import { sleep } from '../../utils/utils';
 
 const { array } = PropTypes;
 
