@@ -34,6 +34,7 @@
     "eslint-plugin-react": "^6.7.1",
     "flow-bin": "^0.35.0",
     "labrador": "^0.6.0",
+    "labrador-immutable": "^0.6.0",
     "labrador-redux": "^0.1.0",
     "labrador-storage": "^0.1.0",
     "redux": "^3.6.0",
