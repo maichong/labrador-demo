@@ -15,7 +15,8 @@
     }
   },
   "classNames": {
-    "for-test":true
+    "todo-finished":true,
+    "todo-finished-title":true
   },
   "env":{
     "development": {},
