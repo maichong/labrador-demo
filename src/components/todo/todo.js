@@ -17,7 +17,6 @@ class Todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ...props,
       icon: props.finished ? 'success_circle' : 'circle',
       className: props.finished ? 'todo-finished' : ''
     };
@@ -25,7 +24,6 @@ class Todo extends Component {
 
   onUpdate(props) {
     this.setState({
-      ...props,
       icon: props.finished ? 'success_circle' : 'circle',
       className: props.finished ? 'todo-finished' : ''
     });

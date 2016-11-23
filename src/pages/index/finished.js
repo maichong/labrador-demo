@@ -4,11 +4,13 @@ import { connect } from 'labrador-redux';
 import Todo from '../../components/todo/todo';
 import * as todoActions from '../../redux/todos';
 
-const { array } = PropTypes;
+const { array, func } = PropTypes;
 
 class Finished extends Component {
   static propTypes = {
-    todos: array
+    todos: array,
+    removeTodo: func,
+    restoreTodo: func
   };
 
   static defaultProps = {
@@ -19,7 +21,9 @@ class Finished extends Component {
     let todos = this.props.todos;
     let finished = [];
     if (todos.length) {
-      finished = todos.asMutable().filter((todo) => todo.finished).sort((a, b) => (a.finishedAt < b.finishedAt ? 1 : -1));
+      finished = todos.asMutable()
+        .filter((todo) => todo.finished)
+        .sort((a, b) => (a.finishedAt < b.finishedAt ? 1 : -1));
     }
     return {
       todos: finished.map((todo) => ({

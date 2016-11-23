@@ -1,17 +1,19 @@
 <view class="todo-list has-toolbar">
   <view class="list">
-    <list key="todos" name="todo"/>
+    <list key="unfinished" name="todo"/>
   </view>
-  <block wx:if="{{finished}}">
+  <block wx:if="{{state.finished}}">
     <view class="group-header">已完成</view>
     <view class="list">
       <list key="finished" name="todo"/>
     </view>
-    <view wx:if="{{finished>3}}" class="padding-h-xxlarge padding-top-large">
+    <view wx:if="{{state.finished>3}}" class="padding-h-xxlarge padding-top-large">
       <view class="btn btn-gray-hollow block" catchtap="handleShowFinished">查看全部已完成</view>
     </view>
   </block>
-  <view wx:if="{{count}}" class="gray padding text-right">总数 {{count}} 已完成 {{finished}}</view>
+  <view wx:if="{{props.todos.length}}" class="gray padding text-right">总数 {{props.todos.length}} 已完成
+    {{state.finished}}
+  </view>
   <view wx:else class="msg">
     <icon class="msg-icon" type="info" size="80" color="#ccc"/>
     <view class="msg-title">当前没有任务</view>
@@ -19,7 +21,8 @@
   </view>
   <view class="toolbar toolbar-bottom padding-h-xsmall">
     <view class="form-group flex">
-      <input class="form-control" type="text" placeholder="请输入新的任务" value="{{titleInput}}" bindinput="handleInput"/>
+      <input class="form-control" type="text" placeholder="请输入新的任务" value="{{state.titleInput}}"
+             bindinput="handleInput"/>
     </view>
     <view class="btn btn-success btn-toolbar" catchtap="handleCreate">新增</view>
   </view>

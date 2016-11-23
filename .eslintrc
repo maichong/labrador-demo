@@ -29,7 +29,10 @@
     "import/no-extraneous-dependencies": 1,
     "radix": 0,
     "max-len": [2, {"code": 120, "ignoreComments": true}],
+    "require-yield": 1,
     "react/forbid-prop-types": 0,
+    "react/no-unused-prop-types": 1,
+    "react/prefer-stateless-function": 0,
     "react/sort-comp": [
       2, {
         "order": [

@@ -5,16 +5,19 @@ import Todo from '../../components/todo/todo';
 import * as todoActions from '../../redux/todos';
 import { sleep } from '../../utils/utils';
 
-const { array } = PropTypes;
+const { array, func } = PropTypes;
 
 class Index extends Component {
   static propTypes = {
-    todos: array
+    todos: array,
+    removeTodo: func,
+    restoreTodo: func,
+    createTodo: func,
+    finishTodo: func
   };
 
   state = {
     titleInput: '',
-    count: 0,
     finished: 0
   };
 
@@ -24,10 +27,13 @@ class Index extends Component {
     let finished = [];
     if (todos.length) {
       unfinished = todos.filter((todo) => !todo.finished);
-      finished = todos.asMutable().filter((todo) => todo.finished).sort((a, b) => (a.finishedAt < b.finishedAt ? 1 : -1)).slice(0, 3);
+      finished = todos.asMutable()
+        .filter((todo) => todo.finished)
+        .sort((a, b) => (a.finishedAt < b.finishedAt ? 1 : -1))
+        .slice(0, 3);
     }
     return {
-      todos: unfinished.map((todo) => ({
+      unfinished: unfinished.map((todo) => ({
         component: Todo,
         key: todo.id,
         props: {
@@ -52,12 +58,11 @@ class Index extends Component {
 
   onUpdate(props) {
     let nextState = {
-      count: props.todos.length,
       finished: 0
     };
     props.todos.forEach((todo) => {
       if (todo.finished) {
-        nextState.finished++;
+        nextState.finished += 1;
       }
     });
     this.setState(nextState);
