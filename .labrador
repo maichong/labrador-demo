@@ -1,28 +1,30 @@
 {
-  "define":{
-    "API_ROOT":"http://localhost:5000/"
+  "define": {
+    "API_ROOT": "http://localhost:5000/"
   },
-  "npmMap":{
-    "lodash.isplainobject":"lodash/isPlainObject",
-    "lodash.isstring":"lodash/isString",
-    "lodash.issymbol":"lodash/isSymbol",
-    "lodash-es":"lodash"
+  "npmMap": {
+    "lodash.isplainobject": "lodash/isPlainObject",
+    "lodash.isstring": "lodash/isString",
+    "lodash.issymbol": "lodash/isSymbol",
+    "lodash-es": "lodash"
   },
-  "uglify":{
+  "uglify": {
     "mangle": [],
     "compress": {
       "warnings": false
     }
   },
   "classNames": {
-    "todo-finished":true,
-    "todo-finished-title":true
+    "todo-finished": true,
+    "todo-finished-title": true,
+    "btn-gray-hollow": true,
+    "btn-danger": true
   },
-  "env":{
+  "env": {
     "development": {},
     "production": {
-      "define":{
-        "API_ROOT":"https://your.online.domain/"
+      "define": {
+        "API_ROOT": "https://your.online.domain/"
       }
     }
   }
