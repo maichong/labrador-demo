@@ -1,0 +1,7 @@
+<template name="example">
+  <view>
+    <text>示例Template</text>
+    <text>不推荐使用template/import标签，详细说明请见Labrador文档 https://github.com/maichong/labrador</text>
+    <text>如果您确实需要使用template/import，请将您的template文件置于此templates目录或pages目录中，因为其他目录中的xml将在编译时被抛弃。</text>
+  </view>
+</template>
