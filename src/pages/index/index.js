@@ -33,7 +33,7 @@ class Index extends Component {
         .slice(0, 3);
     }
     return {
-      unfinished: unfinished.map((todo) => ({
+      list: unfinished.map((todo) => ({
         component: Todo,
         key: todo.id,
         props: {

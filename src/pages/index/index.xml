@@ -1,6 +1,6 @@
 <view class="todo-list has-toolbar">
   <view class="list">
-    <list key="unfinished" name="todo"/>
+    <list key="list" name="todo"/>
   </view>
   <block wx:if="{{state.finished}}">
     <view class="group-header">已完成</view>
