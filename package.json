@@ -6,6 +6,7 @@
   "scripts": {
     "build": "labrador build",
     "flow": "flow",
+    "start": "labrador watch",
     "eslint": "eslint ./"
   },
   "keywords": [
