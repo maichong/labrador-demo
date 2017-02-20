@@ -43,5 +43,8 @@
     "redux-saga": "^0.13.0",
     "regenerator-runtime": "^0.10.1",
     "seamless-immutable": "^6.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4"
   }
 }
