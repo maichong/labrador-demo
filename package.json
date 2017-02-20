@@ -6,6 +6,7 @@
   "scripts": {
     "build": "labrador build",
     "flow": "flow",
+    "start": "labrador watch",
     "eslint": "eslint ./"
   },
   "keywords": [
@@ -14,24 +15,7 @@
   "dependencies": {
     "al-request": "^0.1.3",
     "al-ui": "^0.1.1",
-    "assert": "^1.4.1",
-    "babel-core": "^6.22.1",
-    "babel-eslint": "^7.1.1",
-    "babel-plugin-syntax-export-extensions": "^6.13.0",
-    "babel-plugin-syntax-flow": "^6.18.0",
-    "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-runtime": "^6.22.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.22.0",
-    "eslint": "^3.15.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-flowtype": "^2.30.0",
-    "eslint-plugin-flowtype-errors": "^3.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.9.0",
-    "flow-bin": "^0.38.0",
     "labrador": "^0.6.12",
     "labrador-immutable": "^0.6.0",
     "labrador-redux": "^0.1.1",
@@ -43,5 +27,25 @@
     "redux-saga": "^0.13.0",
     "regenerator-runtime": "^0.10.1",
     "seamless-immutable": "^6.3.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-syntax-export-extensions": "^6.13.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-flowtype-errors": "^3.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.0",
+    "flow-bin": "^0.38.0"
   }
 }
